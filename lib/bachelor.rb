@@ -7,6 +7,7 @@ def get_first_name_of_season_winner(data, season)
       if key["status"] == "Winner"
         first_name = "name"
         binding.pry
+      end
     end
   end
 
