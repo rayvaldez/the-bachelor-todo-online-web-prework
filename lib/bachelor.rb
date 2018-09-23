@@ -42,6 +42,7 @@ def get_occupation(data, hometown)
       if att["hometown"] == hometown
         return ["occupation"]
         break
+      end
     end
   end
 end
