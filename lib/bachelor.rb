@@ -2,10 +2,13 @@ require 'pry'
 
 def get_first_name_of_season_winner(data, season)
   first_name = nil
+  winner = "winner"
   data.each do |season, value|
-    puts value
-    binding.pry
+    if value[:status] == winner
+      first_name = :name
+      binding.pry    
     end
+  end
 
 end
 
