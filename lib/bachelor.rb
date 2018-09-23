@@ -9,10 +9,9 @@ def get_first_name_of_season_winner(data, season)
           first_name = key["name"].split(" ")[0]
         end
       end
-      first_name
     end
   end
-
+  first_name
 end
 
 def get_contestant_name(data, occupation)
