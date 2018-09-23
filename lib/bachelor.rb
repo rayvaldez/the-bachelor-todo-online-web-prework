@@ -2,7 +2,7 @@ require 'pry'
 
 def get_first_name_of_season_winner(data, season)
   first_name = nil
-  data.collect do |season_no, detail_hash|
+  data.each do |season_no, detail_hash|
     if season_no == season
       detail_hash.each do |key|
         if key["status"] == "Winner"
@@ -15,7 +15,7 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  data.each
 end
 
 def count_contestants_by_hometown(data, hometown)
