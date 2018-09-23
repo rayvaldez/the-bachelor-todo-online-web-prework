@@ -3,9 +3,10 @@ require 'pry'
 def get_first_name_of_season_winner(data, season)
   first_name = nil
   data.collect do |season, detail_hash|
-    detail_hash.each do |key, value|
+    detail_hash.each do |key|
+      if key["status"] == "Winner"
+        first_name = "name"
         binding.pry
-      
     end
   end
 
