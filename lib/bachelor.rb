@@ -59,5 +59,5 @@ def get_average_age_for_season(data, season)
     end
   end
   average = age.to_f / no_of_cont.to_f
-  average.to_s[3].to_i >= 5 ? average.ceil : average.to_i 
+  
 end
