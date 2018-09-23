@@ -4,9 +4,9 @@ def get_first_name_of_season_winner(data, season)
   first_name = nil
   winner = "winner"
   data.each do |season, value|
-    if value[:status] == winner
+    if value == winner
       first_name = :name
-      binding.pry    
+      binding.pry
     end
   end
 
