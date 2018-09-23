@@ -5,8 +5,8 @@ def get_first_name_of_season_winner(data, season)
   data.collect do |season, detail_hash|
     detail_hash.each do |key|
       if key["status"] == "Winner"
-        first_name = key["name"]
-        binding.pry
+        first_name = key["name"].split(" ")[0]
+
       end
     end
   end
