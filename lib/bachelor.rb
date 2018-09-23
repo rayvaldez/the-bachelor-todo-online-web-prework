@@ -48,13 +48,16 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  age_array = ()
+  no_of_cont = 0
+  age = 0
   data.each do |season_no, contestants|
     if season_no == season
       contestants.each do |att|
-        age_array << att["age"].to_i
-        binding.pry
+        no_of_cont =+ 1
+        age += att["age"].to_i
       end
     end
   end
+  average = age.to_f / no_of_cont.to_f
+  average.to_s[3].to_i >= 5 ? average.ceil : average.to_i 
 end
