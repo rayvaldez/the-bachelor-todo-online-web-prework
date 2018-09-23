@@ -5,7 +5,9 @@ def get_first_name_of_season_winner(data, season)
   winner = "winner"
   data.each do |season, detail_hash|
     detail_hash.each do |key, value|
-      binding.pry
+      if key[:status] == winner
+        binding.pry
+      end
     end
   end
 
