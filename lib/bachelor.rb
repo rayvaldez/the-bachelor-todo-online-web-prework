@@ -40,7 +40,7 @@ def get_occupation(data, hometown)
   data.each do |season, contestants|
     contestants.each do |att|
       if att["hometown"] == hometown
-        return ["occupation"]
+        return att["occupation"]
         break
       end
     end
